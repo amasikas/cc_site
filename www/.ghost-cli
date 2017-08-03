@@ -1,0 +1,9 @@
+{
+  "cli-version": "1.0.3",
+  "active-version": "1.4.0",
+  "name": "localhost",
+  "extension": {
+    "systemd": true
+  },
+  "running": "production"
+}

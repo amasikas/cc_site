@@ -1,0 +1,14 @@
+[Unit]
+Description=Ghost systemd service for blog: localhost
+Documentation=https://docs.ghost.org
+
+[Service]
+Type=simple
+WorkingDirectory=/home/cc_site/www
+User=995
+Environment="NODE_ENV=production"
+ExecStart=/home/software/node-v6.11.2-linux-x64/bin/node /usr/local/bin/ghost run
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
